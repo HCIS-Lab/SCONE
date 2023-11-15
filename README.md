@@ -28,9 +28,14 @@ $ conda activate scone
 $ pip install -r requirements.txt
 ```
 
-## File Structures
+## Usage
 ```
+python3 train.py --dataset <data_root>
 ```
+
+## TODO
+- Upload raw & processed dataset
+- complete the Class FoodDataset in load_data.py
 
 ## Citation
 ```
