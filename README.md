@@ -4,7 +4,7 @@
 [[openreview](https://openreview.net/forum?id=yHlUVHWnBN)] [[website](https://sites.google.com/view/corlscone)]
 
 <p align="center">
-  <img width="400" height="200" src="images/sample.gif">
+  <img src="images/sample.gif">
 </p>
 
 ## System Requirements
