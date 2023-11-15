@@ -10,7 +10,7 @@
 ## System Requirements
 - Linux (Teseted on Ubuntu 18.04)
 - Python 3 (Tested on Python 3.7)
-- Torch (Tested on Torch 1.7.0)
+- Torch (Tested on Torch 1.9.1)
 - Cuda (Tested on Cuda 11.4)
 - GPU (Tested on Nvidia RTX3090)
 - CPU (Tested on Intel COre i7-10700)
