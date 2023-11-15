@@ -1,7 +1,7 @@
 # SCONE
 
 - This GitHub repo is the implementation of "SCONE: A Food Scooping Robot Learning Framework with Active Perception" in CoRL 2023.
-- [openreview](https://openreview.net/forum?id=yHlUVHWnBN)
+[[openreview](https://openreview.net/forum?id=yHlUVHWnBN)] [[website](https://sites.google.com/view/corlscone)]
 
 <p align="center">
   <img width="400" height="200" src="images/sample.gif">
