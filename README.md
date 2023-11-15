@@ -27,7 +27,7 @@ $ conda create -n scone python=3.7
 $ conda activate scone
 ```
 - Install needed package.
-1. Please check the [website] (https://pytorch.org/get-started/previous-versions/) to install pytorch according to your local device.
+1. Please check the [website](https://pytorch.org/get-started/previous-versions/) to install pytorch according to your local device.
 2. Run pip install -r requirements.txt to install other package.
 ```
 $ pip install -r requirements.txt
