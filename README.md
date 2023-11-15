@@ -40,8 +40,8 @@ python3 train.py --dataset <data_root>
 ```
 
 ## TODO
-- Upload raw & processed dataset
-- Complete the Class FoodDataset in load_data.py
+- [ ] Upload raw & processed dataset
+- [ ] Complete the Class FoodDataset in load_data.py
 
 ## Citation
 ```
