@@ -2,6 +2,8 @@
 
 - This GitHub repo is the implementation of "SCONE: A Food Scooping Robot Learning Framework with Active Perception" in CoRL 2023.
 
+![image](images/sample.gif)
+
 ## System Requirements
 - Linux (Teseted on Ubuntu 18.04)
 - Python 3 (Tested on Python 3.7)
