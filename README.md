@@ -29,7 +29,7 @@ $ pip install -r requirements.txt
 ```
 
 ## Usage
-Check config.py file to adjust other parameters.
+Check config file to adjust other parameters.
 ```
 python3 train.py --dataset <data_root>
 ```
