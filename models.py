@@ -90,10 +90,6 @@ class Interactive(nn.Module):
         self.downs = nn.Linear(input_len*256, out_dim) 
     
     def forward(self, inputs):
-        '''
-        default input_len = 7
-        out: batch_size x 128
-        '''
         rgb_seq, depth_seq = inputs
         rgb_latent = []
         depth_latent = []
@@ -126,11 +122,6 @@ class StateRetrieval(nn.Module):
 
     
     def forward(self, inputs):
-        '''
-        interaction_latent: batch_size x 7 x 256
-        local_input:        batch_size x 32
-        out:                batch_size x 128
-        '''
         rgb, depth, ee, interaction_latent, interaction_ee = inputs
 
         # encode local view
