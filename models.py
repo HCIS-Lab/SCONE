@@ -58,10 +58,6 @@ class GlobalTemporal(nn.Module):
         self.downs = nn.Linear(input_len*256, out_dim) 
     
     def forward(self, inputs):
-        '''
-        default input_len = 10
-        out: batch_size x 128
-        '''
         rgb_seq, depth_seq = inputs
         rgb_latent = []
         depth_latent = []
