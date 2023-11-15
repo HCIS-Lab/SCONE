@@ -8,7 +8,7 @@ class FoodDataset(Dataset):
         self.rootPath = args.dataset
     
     def __len__(self):
-        return len(self.mani_rgb)
+        return len(self.ob_rgb)
 
     def __getitem__(self, index):
         return 0
