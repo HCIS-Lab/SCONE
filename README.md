@@ -29,14 +29,15 @@ $ pip install -r requirements.txt
 ```
 
 ## Usage
-Check config.py file to adjust other parameters
+Check config.py file to adjust other parameters.
 ```
 python3 train.py --dataset <data_root>
 ```
 
 ## TODO
 - Upload raw & processed dataset
-- complete the Class FoodDataset in load_data.py
+- Complete the Class FoodDataset in load_data.py
+- Upload test.py
 
 ## Citation
 ```
