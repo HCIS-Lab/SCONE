@@ -156,8 +156,8 @@ class SCONE(nn.Module):
         '''
         ob_rgb:         batch_size x 10 x 3 x 96 x 96
         ob_depth:       batch_size x 10 x 96 x 96
-        local_rgb:      batch_size x 10 x 3 x 96 x 96
-        local_depth:    batch_size x 10 x 96 x 96
+        local_rgb:      batch_size x 3 x 96 x 96
+        local_depth:    batch_size x 96 x 96
         ob_ee:          batch_size x 4
         interact_rgb:   batch_size x 7 x 3 x 96 x 96
         interact_depth: batch_size x 7 x 96 x 96
