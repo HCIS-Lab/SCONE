@@ -153,16 +153,6 @@ class SCONE(nn.Module):
         )
     
     def forward(self, inputs):
-        '''
-        ob_rgb:         batch_size x 10 x 3 x 96 x 96
-        ob_depth:       batch_size x 10 x 96 x 96
-        local_rgb:      batch_size x 3 x 96 x 96
-        local_depth:    batch_size x 96 x 96
-        ob_ee:          batch_size x 4
-        interact_rgb:   batch_size x 7 x 3 x 96 x 96
-        interact_depth: batch_size x 7 x 96 x 96
-        interact_ee:    batch x 7 x 4
-        '''
         ob_rgb, ob_depth, local_rgb, local_depth, ob_ee, interact_rgb, interact_depth, interact_ee = inputs
         global_input = self.global_encoder((ob_rgb, ob_depth))
         interactive_latent, interactive_input = self.interactive_encoder((interact_rgb, interact_depth))
