@@ -125,12 +125,12 @@ class StateRetrieval(nn.Module):
         rgb_latent = self.rgb_downs((out_rgb.squeeze(-1)))
         out_depth = self.local_depth(depth).squeeze(-1)
         depth_latent = self.depth_downs(out_depth.squeeze(-1))
-        local_latent =  torch.cat([rgb_latent, depth_latent], -1) # [batch, 256]
+        local_latent =  torch.cat([rgb_latent, depth_latent], -1)
         local_input = self.local_downs(local_latent)
 
         # concat observation and ee pose
-        local_state = torch.cat([local_latent, ee], -1).unsqueeze(1) # [batch, 1, 260]
-        interaction_state = torch.cat([interaction_latent, interaction_ee], -1) # [batch, 1, 260]
+        local_state = torch.cat([local_latent, ee], -1).unsqueeze(1)
+        interaction_state = torch.cat([interaction_latent, interaction_ee], -1)
 
         # cross attention
         srm_out, mha_cross_weight = self.cross_mha(local_state, interaction_state, interaction_state)
