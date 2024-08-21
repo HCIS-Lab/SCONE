@@ -42,7 +42,7 @@ def train(args, device, train_loader, model, criterion, optimizer, scheduler):
             # statistics
             running_loss += loss.item() * ob_rgb.size(0)
         
-        scheduler.step(epoch)
+        scheduler.step()
         epoch_loss = running_loss/len(train_loader.dataset)
 
         print("lr: {}".format(scheduler.optimizer.param_groups[0]['lr']))
@@ -83,7 +83,7 @@ def main():
     model = models.SCONE().to(device)
     criterion = nn.MSELoss()
     optimizer = optim.Adam(model.parameters(), lr=args.lr, betas=(0.9, 0.999), weight_decay=0, eps=1e-07, amsgrad=False)
-    scheduler = lr_scheduler.ReduceLROnPlateau(optimizer, mode='min', factor=0.7, patience=10, min_lr=0.00001)
+    # scheduler = lr_scheduler.ReduceLROnPlateau(optimizer, mode='min', factor=0.7, patience=10, min_lr=0.00001)
 
     # train
     train(args, device, train_loader, model, criterion, optimizer, scheduler)
