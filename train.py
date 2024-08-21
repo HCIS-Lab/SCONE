@@ -83,7 +83,7 @@ def main():
     model = models.SCONE().to(device)
     criterion = nn.MSELoss()
     optimizer = optim.Adam(model.parameters(), lr=args.lr, betas=(0.9, 0.999), weight_decay=0, eps=1e-07, amsgrad=False)
-    # scheduler = lr_scheduler.ReduceLROnPlateau(optimizer, mode='min', factor=0.7, patience=10, min_lr=0.00001)
+    scheduler = lr_scheduler.StepLR(optimizer, step_size=10, gamma=0.9)
 
     # train
     train(args, device, train_loader, model, criterion, optimizer, scheduler)
