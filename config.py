@@ -13,7 +13,7 @@ def parse_args():
     # training
     parser.add_argument('--N_epochs', default=500, type=int,
                         help='number of total epochs to run')
-    parser.add_argument('--lr', default=0.001, type=float,
+    parser.add_argument('--lr', default=0.0001, type=float,
                         help='initial learning rate')
     parser.add_argument('--save_epoch', default=100, type=int,
                         help='each #epoch save model weights')
